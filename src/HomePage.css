@@ -1,4 +1,33 @@
-.mine{
+.mine {
     border-radius: 50%;
     width: 90%;
-  }
+}
+
+.dot {
+    height: 200px;
+    width: 200px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    border: 2px solid #ffe720;
+    z-index: 50;
+}
+
+.pink {
+    background-color: #e55773;
+    color: #ffffff;
+}
+
+.blue {
+    background-color: #76d3d7;
+    color: #ffffff;
+}
+
+.yellow {
+    background-color: #8d8720;
+    color: #ffffff;
+}
+.move:hover{
+    cursor: pointer;
+}

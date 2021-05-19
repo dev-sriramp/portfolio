@@ -1,6 +1,7 @@
 import React, { Component, } from 'react';
 import './App.css';
 import HomePage from './HomePage';
+import Error from './Error';
 
 import {
   BrowserRouter as Router,
@@ -13,6 +14,9 @@ class App extends Component {
     <Router>
       <Route exact path="/home">
           <HomePage />
+        </Route>
+        <Route exact path="/error">
+          <Error />
         </Route>
         
         <Route exact path="/">
