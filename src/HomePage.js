@@ -41,7 +41,7 @@ class HomePage extends Component {
               </a>
               <div className={"collapse navbar-collapse " + shown}>
                 <ul className='navbar-nav mx-5 px-5'>
-                  <li className='nav-item px-5 move' onClick={this.find('myresume')}><p>HOME</p></a></li>
+                  <li className='nav-item px-5 move' onClick={this.find('myresume')}><p>HOME</p></li>
                   <li className='nav-item px-5 move' onClick={this.find('myresume')}><p>RESUME</p></li>
                   <li className='nav-item px-5 move' onClick={this.find('myresume')}><p>PROJECT</p></li>
                   <li className='nav-item px-5 move' onClick={this.find('myresume')}><p>CONTACT</p></li>
