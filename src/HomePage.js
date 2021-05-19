@@ -29,7 +29,7 @@ class HomePage extends Component {
               <span className='navbar-toggler-icon'></span>
             </button>
             <a className='navbar-brand mx-5' href='#'><h1>SRIRAM P</h1>
-              <h3>enthusiastic learner</h3>
+              <h3>EnThUsIaStIc LeArNeR</h3>
             </a>
             <div className={"collapse navbar-collapse " + shown}>
               <ul className='navbar-nav mx-5 px-5'>
@@ -42,9 +42,9 @@ class HomePage extends Component {
           </div>
         </nav>
         </header>
-      <div >
+      {/* <div >
         <h1>hi</h1>
-      </div>
+      </div> */}
         
       </div>
     );
