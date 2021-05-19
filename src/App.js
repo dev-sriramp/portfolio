@@ -12,7 +12,7 @@ class App extends Component {
   render(){
   return (
     <Router>
-      <Route exact path="/home">
+      <Route exact path="/">
           <HomePage />
         </Route>
         <Route exact path="/error">
@@ -20,7 +20,7 @@ class App extends Component {
         </Route>
         
         <Route exact path="/">
-          <Redirect to="/home" />
+          <Redirect to="/" />
         </Route>
   </Router>
   );}
