@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './App.css';
-
+import './HomePage.css';
+import Img from './assets/Port_Image.jpg';
 class HomePage extends Component {
   
   constructor(props) {
@@ -23,7 +23,7 @@ class HomePage extends Component {
       
       <div >
          <header className='jumbotron'>
-        <nav className='navbar navbar-light navbar-expand-sm bg-light'>
+        <nav className='navbar navbar-light navbar-expand-sm'>
           <div className='container'>
             <button className='navbar-toggler' type='button' onClick={this.toggleMenu}>
               <span className='navbar-toggler-icon'></span>
@@ -42,9 +42,19 @@ class HomePage extends Component {
           </div>
         </nav>
         </header>
-      {/* <div >
-        <h1>hi</h1>
-      </div> */}
+       <div className='container bg-light'> 
+       
+      <div className='row'>
+        <div className = 'col-sm-12 col-md-6'>
+	
+					<img src= {Img} alt="pic" className='mine img-fluid p-5'/>
+			</div>
+      <div className='col-sm-12 col-md-6'>
+        <h1><strong>hello</strong></h1>
+      </div>
+      </div> 
+
+      </div> 
         
       </div>
     );
