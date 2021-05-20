@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { Route, Redirect } from 'react-router-dom';
 import './HomePage.css';
 import Img from './assets/Port_Image.jpg';
+
 class HomePage extends Component {
 
   constructor(props) {
@@ -22,7 +22,8 @@ class HomePage extends Component {
   find = siteValue => () => {
     console.log('find')
     if (siteValue === 'myresume') {
-      window.location.href = '/error'
+      console.log(siteValue);
+       window.location.href = '/error'
     }
   }
   render() {
@@ -36,12 +37,12 @@ class HomePage extends Component {
               <button className='navbar-toggler' type='button' onClick={this.toggleMenu}>
                 <span className='navbar-toggler-icon'></span>
               </button>
-              <a className='navbar-brand mx-5' href='#'><h1>SRIRAM P</h1>
+              <span className='navbar-brand mx-5 move' onClick={this.find('myresume')}><h1>SRIRAM P</h1>
                 <h3>EnThUsIaStIc LeArNeR</h3>
-              </a>
+              </span>
               <div className={"collapse navbar-collapse " + shown}>
                 <ul className='navbar-nav'>
-                  <li className='nav-item move' onClick={this.find('myresume')}><p>HOME&emsp;</p></li>
+                  <li className='nav-item move active' onClick={this.find('myresume')}><p className='active'>HOME&emsp;</p></li>
                   <li className='nav-item move' onClick={this.find('myresume')}><p>RESUME&emsp;</p></li>
                   <li className='nav-item move' onClick={this.find('myresume')}><p>PROJECT&emsp;</p></li>
                   <li className='nav-item move' onClick={this.find('myresume')}><p>CONTACT&emsp;</p></li>
