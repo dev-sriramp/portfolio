@@ -5,7 +5,7 @@ class Error extends Component {
         return(
             <div>
                 <h1 className='zoom'>404 NOT FOUND</h1>
-                <h6 className='zoomnot'>Will Available Soon</h6>
+                <h6 className='zoomnot'>Will Available Soon..</h6>
             </div>
         )
     }
