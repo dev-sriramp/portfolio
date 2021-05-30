@@ -31,3 +31,20 @@
 .move:hover{
     cursor: pointer;
 }
+.hlo{
+    font-size: 100px;
+    font-family:'Aclonica';
+}
+.homeabout{
+    font-size: 30px;
+    font-family:'Aclonica';
+}
+.abtme{
+    padding-top: 25%;
+    padding-bottom: 20%;
+}
+.footer{
+    background-color: #b1948c;
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
