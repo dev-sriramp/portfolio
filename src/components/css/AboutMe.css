@@ -3,16 +3,6 @@
     width: 90%;
 }
 
-.dot {
-    height: 200px;
-    width: 200px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    text-align: center;
-    border: 2px solid #ffe720;
-    z-index: 50;
-}
 
 .pink {
     background-color: #e55773;
@@ -42,9 +32,4 @@
 .abtme{
     padding-top: 25%;
     padding-bottom: 20%;
-}
-.footer{
-    background-color: #b1948c;
-    padding-bottom: 1%;
-    padding-top: 1%;
 }

@@ -1,7 +1,7 @@
 import React, { Component, } from 'react';
 import './App.css';
-import HomePage from './HomePage';
-import Error from './Error';
+import HomePage from './components/HomePage';
+import Error from './components/Error';
 
 import {
   BrowserRouter as Router,
@@ -12,15 +12,14 @@ class App extends Component {
   render(){
   return (
     <Router>
-      <Route exact path="/">
-          <HomePage />
-        </Route>
-        <Route exact path="/error">
+        <Route exact path="/">
+          <Redirect to="/Home" />
+        </Route> 
+        <Route exact path="/Error">
           <Error />
         </Route>
-        
-        <Route exact path="/">
-          <Redirect to="/" />
+        <Route exact path="/Home">
+          <HomePage />
         </Route>
   </Router>
   );}

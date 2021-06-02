@@ -1,58 +1,25 @@
 import React, { Component } from 'react';
-import { Button } from 'element-react';
-import './HomePage.css';
-import Img from './assets/Port_Image.jpg';
+import './css/AboutMe.css';
+import Footer from './Footer';
+import Img from '../assets/PortImage.jpg';
 
-class HomePage extends Component {
-
-  constructor(props) {
-    super(props);
-    this.state = {
-      show: false,
-      SiteName: "",
-    };
-    this.toggleMenu = this.toggleMenu.bind(this);
-  }
-
-  toggleMenu() {
-    this.setState({
-      show: !this.state.show
-    })
-  }
-
-  find = siteValue => () => {
-    console.log('find')
-    if (siteValue === 'myresume') {
-      console.log(siteValue);
-      window.location.href = '/error'
-    }
-  }
-  render() {
-    const shown = (this.state.show) ? "show" : "";
-    return (
-
-      <div >
-        <header className='jumbotron'>
-          <nav className='navbar navbar-light navbar-expand-md'>
-            <div className='container'>
-              <button className='navbar-toggler' type='button' onClick={this.toggleMenu}>
-                <span className='navbar-toggler-icon'></span>
-              </button>
-              <span className='navbar-brand mx-5 move' onClick={this.find('myresume')}><h1>SRIRAM P</h1>
-                <h3>EnThUsIaStIc LeArNeR</h3>
-              </span>
-              <div className={"collapse navbar-collapse " + shown}>
-                <ul className='navbar-nav'>
-                  <li className='nav-item move active' onClick={this.find('myresume')}><p className='active'>HOME&emsp;</p></li>
-                  <li className='nav-item move' onClick={this.find('myresume')}><p>RESUME&emsp;</p></li>
-                  <li className='nav-item move' onClick={this.find('myresume')}><p>PROJECT&emsp;</p></li>
-                  <li className='nav-item move' onClick={this.find('myresume')}><p>CONTACT&emsp;</p></li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        </header>
-        <div className='container bg-light'>
+class AboutMe extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+          SiteName: "",
+        };
+      }
+    
+    
+      find = siteValue => () => {
+        if (siteValue === 'myresume') {
+          window.location.href = '/Error'
+        }
+      }
+render(){
+return(
+<div className='container bg-light'>
           <div className='row'>
             <div className='col-sm-12 col-md-5'>
               <img src={Img} alt="pic" className='mine rounded-circle p-5' />
@@ -72,15 +39,10 @@ class HomePage extends Component {
               <p className='abtme'>Torrieux de bout d'viarge de verrat de mosus de saint-cimonaque de calvince d'enfant d'chienne de cibouleau de batèche de ciboire.Boswell de saint-ciboire de calvince de sacristi de calvinouche de p'tit Jésus de cochonnerie de sapristi de maudite marde de verrat de cibole.
               </p>
             </div>
-            <div className='col-12 footer'>
-
-              <h4 className="fa fa-envelope fa-5x bg-primary" aria-hidden="true"></h4>
-            </div>
+            <Footer />
           </div>
         </div>
-      </div>
-    );
-  }
-}
 
-export default HomePage;
+)
+}};
+export default AboutMe;
