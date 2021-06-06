@@ -1,5 +1,12 @@
 .footer{
-    background-color: #b1948c;
+    background-color: #e23c3c;
     padding-bottom: 1%;
     padding-top: 1%;
+    color:aliceblue;
+}
+.move:hover{
+    cursor: pointer;
+}
+a:link{
+    color: aliceblue;
 }

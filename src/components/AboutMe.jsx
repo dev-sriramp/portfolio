@@ -27,15 +27,17 @@ return(
             <div className='col-sm-12 col-md-7 '>
               <h1 className='hlo'>Hello,</h1>
               <h4 className='homeabout'>a bit about me:</h4>
+              <div className="contain"> 
               <span className="move" onClick={this.find('myresume')}>
-                <svg className="bd-placeholder-img rounded-circle" width="180" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>MY RESUME</title><rect width="100%" height="100%" fill="#e55773" ></rect><text x="25%" y="50%" fill="#ffffff">MY RESUME</text></svg>
+                <svg className="bd-placeholder-img rounded-circle" width="180" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>MY RESUME</title><rect width="100%" height="100%" fill="#ffaf00" ></rect><text x="25%" y="50%" fill="#ffffff">MY RESUME</text></svg>
               </span>
               <span className="move" onClick={this.find('myresume')}>
-                <svg className="bd-placeholder-img rounded-circle" width="180" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>MY WORKS</title><rect width="100%" height="100%" fill="#76d3d7"></rect><text x="25%" y="50%" fill="#ffffff">MY WORK</text></svg>
+                <svg className="bd-placeholder-img rounded-circle" width="180" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>MY WORKS</title><rect width="100%" height="100%" fill="#da2268"></rect><text x="25%" y="50%" fill="#ffffff">MY WORK</text></svg>
               </span>
               <span className="move" onClick={this.find('myresume')}>
-                <svg className="bd-placeholder-img rounded-circle" width="180" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>MY SKILLS</title><rect width="100%" height="100%" fill="#8d8720"></rect><text x="25%" y="50%" fill="#ffffff">MY SKILLS</text></svg>
+                <svg className="bd-placeholder-img rounded-circle" width="180" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>MY SKILLS</title><rect width="100%" height="100%" fill="#bb02ff"></rect><text x="25%" y="50%" fill="#ffffff">MY SKILLS</text></svg>
               </span>
+              </div>
               <p className='abtme'>Torrieux de bout d'viarge de verrat de mosus de saint-cimonaque de calvince d'enfant d'chienne de cibouleau de batèche de ciboire.Boswell de saint-ciboire de calvince de sacristi de calvinouche de p'tit Jésus de cochonnerie de sapristi de maudite marde de verrat de cibole.
               </p>
             </div>

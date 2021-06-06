@@ -3,21 +3,6 @@
     width: 90%;
 }
 
-
-.pink {
-    background-color: #e55773;
-    color: #ffffff;
-}
-
-.blue {
-    background-color: #76d3d7;
-    color: #ffffff;
-}
-
-.yellow {
-    background-color: #8d8720;
-    color: #ffffff;
-}
 .move:hover{
     cursor: pointer;
 }
@@ -32,4 +17,18 @@
 .abtme{
     padding-top: 25%;
     padding-bottom: 20%;
+}
+.contain{
+padding-top: 5%;
+
+}
+.contain:hover .move{
+    filter: blur(10px);
+    transform: scale(0.9);
+    opacity: 0.5;
+}
+.contain .move:hover{
+    filter: blur(0px);
+    transform: scale(1.1);
+    opacity: 1;
 }
