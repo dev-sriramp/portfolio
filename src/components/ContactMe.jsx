@@ -22,7 +22,7 @@ register = (e) =>{
     displayname : this.state.displayname,
   };
   // console.log(data)
-  axios.post("http://sriram123987.hostfree.pw/index.php",data).then(res => {alert(res.data)}).catch(err => {alert(err)})
+  axios.post("http://sriram1239876.hostfree.pw/index.php",data).then(res => {alert(res.data)}).catch(err => {alert(err)})
   console.log('function called')
 }
   render() {
