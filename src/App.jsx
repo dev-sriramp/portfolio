@@ -2,6 +2,7 @@ import React, { Component, } from 'react';
 import './App.css';
 import HomePage from './components/HomePage';
 import Error from './components/Error';
+import ContactMe from './components/ContactMe'
 
 import {
   BrowserRouter as Router,
@@ -17,6 +18,9 @@ class App extends Component {
         </Route> 
         <Route exact path="/Error">
           <Error />
+        </Route>
+        <Route exact path="/ContactMe">
+          <ContactMe />
         </Route>
         <Route exact path="/Home">
           <HomePage />
