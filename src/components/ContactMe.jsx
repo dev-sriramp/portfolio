@@ -23,7 +23,7 @@ register = (e) =>{
   };
   // console.log(data)
   axios.post("http://15.207.115.49/react/index.php",data).then(res => {alert(res.data)}).catch(err => {alert(err)})
-  console.log('function called')
+
 }
   render() {
     return (
