@@ -20,6 +20,9 @@ class Header extends Component {
         if (siteValue === 'myresume') {
           window.location.href = '/Error'
         }
+        else if (siteValue === 'contactme') {
+          window.location.href = '/ContactMe'
+        }
       }
 render(){
     const shown = (this.state.show) ? "show" : "";
@@ -38,7 +41,7 @@ return(
                   <li className='nav-item move active'><p className='active'>HOME&emsp;</p></li>
                   <li className='nav-item move' onClick={this.find('myresume')}><p>RESUME&emsp;</p></li>
                   <li className='nav-item move' onClick={this.find('myresume')}><p>PROJECT&emsp;</p></li>
-                  <li className='nav-item move' onClick={this.find('myresume')}><p>CONTACT&emsp;</p></li>
+                  <li className='nav-item move' onClick={this.find('contactme')}><p>CONTACT&emsp;</p></li>
                 </ul>
               </div>
             </div>
