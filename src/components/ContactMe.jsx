@@ -14,8 +14,23 @@ class ContactMe extends Component {
     this.setState({[e.target.name]:e.target.value})
   }
 
+
 register = (e) =>{
   e.preventDefault();
+  var xhr = new XMLHttpRequest()
+  // xhr.open('POST','http://15.207.115.49/react/index.php',true)
+  // xhr.send(JSON.stringify({
+  //   username : this.state.username,
+  //   password : this.state.password,
+  //   displayname : this.state.displayname,
+  // }))
+  xhr.open("post", "http://15.207.115.49/react/index.php", true)
+      xhr.send(JSON.stringify({
+          username : this.state.username,
+          password : this.state.password,
+          displayname : this.state.displayname,
+        }));
+
   // var data = {
   //   username : this.state.username,
   //   password : this.state.password,
@@ -23,27 +38,27 @@ register = (e) =>{
   // };
   // console.log(data)
   // axios.post("http://15.207.115.49/react/index.php",data).then(res => {alert(res.data)}).catch(err => {alert(err)})
-  fetch("http://15.207.115.49/react/index.php", {
-    method: "POST",
+//   fetch("http://15.207.115.49/react/index.php", {
+//     method: "POST",
       
-    // Adding body or contents to send
-    body: JSON.stringify({
-      username : this.state.username,
-      password : this.state.password,
-      displayname : this.state.displayname,
-    }),
+//     // Adding body or contents to send
+//     body: JSON.stringify({
+//       username : this.state.username,
+//       password : this.state.password,
+//       displayname : this.state.displayname,
+//     }),
       
-    // Adding headers to the request
-    headers: {
-        "Content-type": "application/json; charset=UTF-8"
-    }
-})
+//     // Adding headers to the request
+//     headers: {
+//         "Content-type": "application/json; charset=UTF-8"
+//     }
+// })
   
 // Converting to JSON
-.then(response => response.json())
+// .then(response => response.json())
   
-// Displaying results to console
-.then(json => console.log(json));
+// // Displaying results to console
+// .then(json => console.log(json));
 }
   render() {
     return (
