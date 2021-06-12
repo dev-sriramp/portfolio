@@ -60,7 +60,7 @@ register = (e) =>{
           </div>
 
           <div className="form-group">
-            <label>Display name</label>
+            <label>Display Name</label>
             <input type="text" onChange={this.inputSet}name="displayname" className="form-control" />
           </div>
 
