@@ -38,7 +38,7 @@ register = (e) =>{
   // };
   // console.log(data)
   // axios.post("https://15.206.165.57/react/index.php",data).then(res => {alert(res.data)}).catch(err => {alert(err)})
-  fetch("http://15.207.115.49/react/index.php", {
+  fetch("https://15.206.165.57/react/index.php", {
     method: "POST",
       
     // Adding body or contents to send
