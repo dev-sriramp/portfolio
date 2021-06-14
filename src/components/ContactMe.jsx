@@ -1,5 +1,5 @@
 import React, { Component, } from 'react';
-import axios from 'axios';
+// import axios from 'axios';
 
 class ContactMe extends Component {
   constructor(props){
@@ -31,28 +31,28 @@ register = (e) =>{
   //         displayname : this.state.displayname,
   //       }));
 
-  var data = {
-    username : this.state.username,
-    password : this.state.password,
-    displayname : this.state.displayname,
-  };
-  console.log(data)
-  axios.post("https://15.206.165.57/react/index.php",data).then(res => {alert(res.data)}).catch(err => {alert(err)})
-//   fetch("http://15.207.115.49/react/index.php", {
-//     method: "POST",
+  // var data = {
+  //   username : this.state.username,
+  //   password : this.state.password,
+  //   displayname : this.state.displayname,
+  // };
+  // console.log(data)
+  // axios.post("https://15.206.165.57/react/index.php",data).then(res => {alert(res.data)}).catch(err => {alert(err)})
+  fetch("http://15.207.115.49/react/index.php", {
+    method: "POST",
       
-//     // Adding body or contents to send
-//     body: JSON.stringify({
-//       username : this.state.username,
-//       password : this.state.password,
-//       displayname : this.state.displayname,
-//     }),
+    // Adding body or contents to send
+    body: JSON.stringify({
+      username : this.state.username,
+      password : this.state.password,
+      displayname : this.state.displayname,
+    }),
       
-//     // Adding headers to the request
-//     headers: {
-//         "Content-type": "application/json; charset=UTF-8"
-//     }
-// })
+    // Adding headers to the request
+    headers: {
+        "Content-type": "application/json; charset=UTF-8"
+    }
+})
   
 // Converting to JSON
 // .then(response => response.json())
