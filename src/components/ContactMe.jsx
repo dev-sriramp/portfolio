@@ -1,5 +1,5 @@
 import React, { Component, } from 'react';
-// import axios from 'axios';
+import axios from 'axios';
 
 class ContactMe extends Component {
   constructor(props){
@@ -17,27 +17,27 @@ class ContactMe extends Component {
 
 register = (e) =>{
   e.preventDefault();
-  var xhr = new XMLHttpRequest()
-  // xhr.open('POST','http://15.207.115.49/react/index.php',true)
-  // xhr.send(JSON.stringify({
-  //   username : this.state.username,
-  //   password : this.state.password,
-  //   displayname : this.state.displayname,
-  // }))
-  xhr.open("post", "http://15.207.115.49/react/index.php", true)
-      xhr.send(JSON.stringify({
-          username : this.state.username,
-          password : this.state.password,
-          displayname : this.state.displayname,
-        }));
+  // var xhr = new XMLHttpRequest()
+  // // xhr.open('POST','http://15.207.115.49/react/index.php',true)
+  // // xhr.send(JSON.stringify({
+  // //   username : this.state.username,
+  // //   password : this.state.password,
+  // //   displayname : this.state.displayname,
+  // // }))
+  // xhr.open("post", "https://13.233.73.171/react/index.php", true)
+  //     xhr.send(JSON.stringify({
+  //         username : this.state.username,
+  //         password : this.state.password,
+  //         displayname : this.state.displayname,
+  //       }));
 
-  // var data = {
-  //   username : this.state.username,
-  //   password : this.state.password,
-  //   displayname : this.state.displayname,
-  // };
-  // console.log(data)
-  // axios.post("http://15.207.115.49/react/index.php",data).then(res => {alert(res.data)}).catch(err => {alert(err)})
+  var data = {
+    username : this.state.username,
+    password : this.state.password,
+    displayname : this.state.displayname,
+  };
+  console.log(data)
+  axios.post("https://15.206.165.57/react/index.php",data).then(res => {alert(res.data)}).catch(err => {alert(err)})
 //   fetch("http://15.207.115.49/react/index.php", {
 //     method: "POST",
       
