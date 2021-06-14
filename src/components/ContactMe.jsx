@@ -1,7 +1,7 @@
 import React, { Component, } from 'react';
 import axios from 'axios';
 import https from 'https';
-const url = 'https://15.206.165.57/react/index.php'
+const url = 'http://65.1.86.32/react/index.php'
 
 class ContactMe extends Component {
   constructor(props){
@@ -78,7 +78,7 @@ register = (e) =>{
       <div className='App-header'>
         <form>
           <div className="form-group">
-            <label>Username</label>
+            <label>UserName</label>
             <input type="text" onChange={this.inputSet}name="username" className="form-control" />
           </div>
 
