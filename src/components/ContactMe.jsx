@@ -1,5 +1,7 @@
 import React, { Component, } from 'react';
-// import axios from 'axios';
+import axios from 'axios';
+import https from 'https';
+const url = 'https://15.206.165.57/react/index.php'
 
 class ContactMe extends Component {
   constructor(props){
@@ -17,27 +19,38 @@ class ContactMe extends Component {
 
 register = (e) =>{
   e.preventDefault();
-  var xhr = new XMLHttpRequest()
-  // xhr.open('POST','http://15.207.115.49/react/index.php',true)
-  // xhr.send(JSON.stringify({
-  //   username : this.state.username,
-  //   password : this.state.password,
-  //   displayname : this.state.displayname,
-  // }))
-  xhr.open("post", "https://15.206.165.57/react/index.php", true)
-      xhr.send(JSON.stringify({
-          username : this.state.username,
-          password : this.state.password,
-          displayname : this.state.displayname,
-        }));
+  // var xhr = new XMLHttpRequest()
+  // // xhr.open('POST','http://15.207.115.49/react/index.php',true)
+  // // xhr.send(JSON.stringify({
+  // //   username : this.state.username,
+  // //   password : this.state.password,
+  // //   displayname : this.state.displayname,
+  // // }))
+  // xhr.open("post", "https://15.206.165.57/react/index.php", true)
+  //     xhr.send(JSON.stringify({
+  //         username : this.state.username,
+  //         password : this.state.password,
+  //         displayname : this.state.displayname,
+  //       }));
 
-  // var data = {
-  //   username : this.state.username,
-  //   password : this.state.password,
-  //   displayname : this.state.displayname,
-  // };
-  // console.log(data)
-  // axios.post("https://15.206.165.57/react/index.php",data).then(res => {alert(res.data)}).catch(err => {alert(err)})
+  var varData = {
+    username : this.state.username,
+    password : this.state.password,
+    displayname : this.state.displayname,
+  };
+  console.log(varData)
+  axios({
+    url: url,
+    method: 'POST',
+    data: {username : this.state.username,
+      password : this.state.password,
+      displayname : this.state.displayname,},
+    headers: {
+    'Content-Type': 'application/json'
+    },
+    responseType: 'json',
+    httpsAgent: new https.Agent({ rejectUnauthorized: false })
+    }).then(res => {alert('sucess')}).catch(err => {alert(err)})
 //   fetch("https://15.206.165.57/react/index.php", {
 //     method: "POST",
       
