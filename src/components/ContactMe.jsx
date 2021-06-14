@@ -78,7 +78,7 @@ register = (e) =>{
       <div className='App-header'>
         <form>
           <div className="form-group">
-            <label>UserName</label>
+            <label>Username</label>
             <input type="text" onChange={this.inputSet}name="username" className="form-control" />
           </div>
 
