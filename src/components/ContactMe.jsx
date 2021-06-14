@@ -1,7 +1,8 @@
 import React, { Component, } from 'react';
 import axios from 'axios';
 import https from 'https';
-const url = 'http://65.1.86.32/react/index.php'
+const url = 'https://65.1.86.32/react/index.php'
+const cert_file = './localhost.crt'
 
 class ContactMe extends Component {
   constructor(props){
@@ -15,7 +16,23 @@ class ContactMe extends Component {
   inputSet = (e) =>{
     this.setState({[e.target.name]:e.target.value})
   }
-
+  agent = new https.Agent({
+    requestCert: true,
+    rejectUnauthorized: false,
+    cert: cert_file
+});
+ options = {
+    url: url,  // <---this is  a fake ip do not bother
+    method: "POST",
+    httpsAgent : this.agent,
+    headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/txt;charset=UTF-8'
+    },
+    data: {username : "this.state.username",
+      password : "this.state.password",
+      displayname : "this.state.displayname",}
+};
 
 register = (e) =>{
   e.preventDefault();
@@ -39,18 +56,7 @@ register = (e) =>{
     displayname : this.state.displayname,
   };
   console.log(varData)
-  axios({
-    url: url,
-    method: 'POST',
-    data: {username : this.state.username,
-      password : this.state.password,
-      displayname : this.state.displayname,},
-    headers: {
-    'Content-Type': 'application/json'
-    },
-    responseType: 'json',
-    httpsAgent: new https.Agent({ rejectUnauthorized: false })
-    }).then(res => {alert('sucess')}).catch(err => {alert(err)})
+  axios(this.options).then(res => {alert('sucess')}).catch(err => {alert(err)})
 //   fetch("https://15.206.165.57/react/index.php", {
 //     method: "POST",
       
@@ -78,7 +84,7 @@ register = (e) =>{
       <div className='App-header'>
         <form>
           <div className="form-group">
-            <label>Username</label>
+            <label>UserName</label>
             <input type="text" onChange={this.inputSet}name="username" className="form-control" />
           </div>
 
