@@ -3,7 +3,7 @@ import './css/HomePage.css';
 import AboutMe from './AboutMe';
 import Header from './Header';
 import Loading from './Loading';
-
+import Footer from './Footer';
 
 
 class HomePage extends Component {
@@ -28,7 +28,8 @@ renderDiv() {
     
   }
   else {
-    return (<div><Header /><AboutMe /></div>)
+    return (<div><Header /> <AboutMe />
+    <Footer /></div>)
   }
 }
   render() {

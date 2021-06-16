@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './css/AboutMe.css';
-import Footer from './Footer';
+// import Footer from './Footer';
 import Img from '../assets/PortImage.jpg';
 
 class AboutMe extends Component {
@@ -41,7 +41,7 @@ return(
               <p className='abtme'>Torrieux de bout d'viarge de verrat de mosus de saint-cimonaque de calvince d'enfant d'chienne de cibouleau de batèche de ciboire.Boswell de saint-ciboire de calvince de sacristi de calvinouche de p'tit Jésus de cochonnerie de sapristi de maudite marde de verrat de cibole.
               </p>
             </div>
-            <Footer />
+            {/* <Footer /> */}
           </div>
         </div>
 

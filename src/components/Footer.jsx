@@ -18,21 +18,21 @@ class Footer extends Component {
     };
     render() {
         return (
-
+<div className='container'>
             <footer className='col-12 footer'>
                 <div className='row'>
                     <div className='col-md-6 col-sm-12 text-center'>
-                        <i className="fa fa-phone fa-3x" aria-hidden="true">Contact</i><br />
-                        <i className="fa fa-envelope fa-3x move" aria-hidden="true" onClick={this.FollowMe('mail')}></i>&emsp;
-                <i className="fa fa-linkedin fa-3x move" aria-hidden="true" onClick={this.FollowMe('linkedin')}></i>
+                        <i className="fa fa-phone fa-2x" aria-hidden="true">Contact</i><br />
+                        <i className="fa fa-envelope fa-2x move" aria-hidden="true" onClick={this.FollowMe('mail')}></i>&emsp;
+                <i className="fa fa-linkedin fa-2x move" aria-hidden="true" onClick={this.FollowMe('linkedin')}></i>
                     </div>
                     <div className='col-md-6 col-sm-12 text-center'>
-                        <i className="fa fa-star fa-3x" aria-hidden="true">Follow</i><br />
-                        <i className="fab fa-github fa-3x move" onClick={this.FollowMe('git')}></i>
-                        <i className="fab fa-hackerrank fa-3x move" onClick={this.FollowMe('hackerrank')}></i>
+                        <i className="fa fa-star fa-2x" aria-hidden="true">Follow</i><br />
+                        <i className="fab fa-github fa-2x move" onClick={this.FollowMe('git')}></i>
+                        <i className="fab fa-hackerrank fa-2x move" onClick={this.FollowMe('hackerrank')}></i>
                     </div>
                 </div>
-            </footer>
+            </footer></div>
         )
     }
 };
