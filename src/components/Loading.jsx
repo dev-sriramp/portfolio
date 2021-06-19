@@ -1,17 +1,24 @@
 import React, { Component} from 'react';
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"
-import Loader from "react-loader-spinner";
+// import Loader from "react-loader-spinner";
+import Lottie from 'react-lottie';
+import LoadingJson from '../assets/LoadingJson.json';
 class Loading extends Component {
   render(){
+    const defaultOptions = {
+      loop: true,
+      autoplay: true, 
+      animationData: LoadingJson,
+      rendererSettings: {
+        preserveAspectRatio: 'xMidYMid slice'
+      }
+    };
   return (
    <div>
-       <Loader 
-       type="Puff"
-       color="#00BFFF"
-       height={800}
-       width={800}
-       timeout={3000}
-       />
+       <Lottie options={defaultOptions}
+              height={600}
+              width={600}
+              />
    </div>
   );}
 }
