@@ -16,8 +16,8 @@ class Loading extends Component {
   return (
    <div>
        <Lottie options={defaultOptions}
-              height={600}
-              width={600}
+              height={500}
+              width={500}
               />
    </div>
   );}
