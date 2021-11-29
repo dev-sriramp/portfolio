@@ -39,7 +39,7 @@ return(
               </span>
               </div>
               <p className='abtme'>
-Diligent Computer Science and Engineering student (8. CGPA) from KPR Institute of Engineering and Technology with Programming Knowledge,communication skills and based on domain I am good at Cybersecurity and reactjs.Interned at ElectroCloud labs where I examined the IOT based Projects.Completed many certified courses based on Software Development.Seeking for IT Profession.
+Diligent Computer Science and Engineering student (8.53 CGPA) from KPR Institute of Engineering and Technology with Programming Knowledge,communication skills and based on domain I am good at Cybersecurity and reactjs.Interned at ElectroCloud labs where I examined the IOT based Projects.Completed many certified courses based on Software Development.Seeking for IT Profession.
               </p>
             </div>
             {/* <Footer /> */}
